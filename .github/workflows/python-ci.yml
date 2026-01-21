@@ -1,0 +1,16 @@
+name: Python CI Pipeline
+on:
+push:
+branches:
+      - main
+
+jobs:
+  run-python-app:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name:;;Run Python app
+        run:python3 app.py
+
